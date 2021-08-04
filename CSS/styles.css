@@ -216,9 +216,37 @@ img {
   cursor: pointer;
 }
 
-.backdrop.is-hidden {
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
   pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 581px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
 }
 
 /* features */
@@ -364,8 +392,7 @@ img {
   cursor: pointer;
 }
 
-.social-link:hover
-.social-icon {
+.social-link:hover .social-icon {
   fill: var(--secondary-text-color);
 }
 
