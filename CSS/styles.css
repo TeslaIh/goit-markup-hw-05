@@ -276,7 +276,6 @@ img {
   justify-content: center;
   align-items: center;
   padding: 6px;
-  fill: var(--tittle-text-color);
   background-color: var(--secondary-text-color);
 }
 
