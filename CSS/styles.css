@@ -245,6 +245,7 @@ img {
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
+  transition: opacity var(--cubic-anim);
 }
 
 .backdrop.is-hidden {
@@ -277,6 +278,7 @@ img {
   align-items: center;
   padding: 6px;
   background-color: var(--secondary-text-color);
+  transition: opacity var(--cubic-anim);
 }
 
 .icon-close-logo {
