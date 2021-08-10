@@ -103,6 +103,7 @@ img {
   font-size: 14px;
   line-height: 1.17;
   position: relative;
+  transition: color var(--cubic-anim);
 }
 
 .address .address-li {
@@ -111,6 +112,8 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
+  position: relative;
+  transition: color var(--cubic-anim);
 }
 
 .address {
@@ -460,6 +463,7 @@ img {
   fill: var(--social-link-color);
   width: 20px;
   height: 20px;
+  transition: fill var(--cubic-anim);
 }
 .social-link:hover,
 .social-link:focus {
@@ -470,7 +474,8 @@ img {
 
 .social-link:hover .social-icon {
   fill: var(--secondary-text-color);
-  transition: background-color var(--cubic-anim);
+  transform: background-color var(--cubic-anim);
+  transition: fill var(--cubic-anim);
 }
 
 /* Clients */
@@ -555,6 +560,8 @@ img {
 
 .foot-li {
   color: var(--unique-color);
+  position: relative;
+  transition: color var(--cubic-anim);
 }
 
 .address-foot .foot-li:hover,
