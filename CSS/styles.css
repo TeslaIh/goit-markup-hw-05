@@ -249,7 +249,6 @@ img {
 }
 
 .backdrop.is-hidden {
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -265,6 +264,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transition: transform var(--cubic-anim);
 }
 
 .icon-close {
@@ -278,7 +278,6 @@ img {
   align-items: center;
   padding: 6px;
   background-color: var(--secondary-text-color);
-  transition: opacity var(--cubic-anim);
 }
 
 .icon-close-logo {
